@@ -1,0 +1,4 @@
+1. Get the phrase or organization
+2. Split the phrase into subsequent words
+3. Iterate through the list of words taking the first letter of each word
+4. Print the letters
