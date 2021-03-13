@@ -4,7 +4,7 @@ from acronyms_demo.acronym import get_acronym
 
 class TestAcronyms(unittest.TestCase):
 
-    def test_it_should_properly_seperate_phrase_initials_with_periods(self):
+    def test_it_should_properly_separate_phrase_initials_with_periods(self):
         test_cases = [
             {
                 'given': ["laughing", "out", "loud"],
