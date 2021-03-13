@@ -35,3 +35,6 @@ class TestAcronyms(unittest.TestCase):
             actual = get_acronym(phrase)
             self.assertEqual(expected, actual, "acronym(s) should match")
 
+
+if __name__ == '__main__':
+    unittest.main()
