@@ -18,15 +18,13 @@ def get_acronym(phrase_list):
             else:
                 initials.append(word[0])
 
-            # print("TEST: Initials - {}".format(initials))
-    
-    # Build the acronym
-    for letter in initials:
-        acronym += letter + "."
+    acronym = ".".join(initials) + "."
 
-    return acronym
+    return acronym.upper()
 
-phrase = input("\nPlease type in a phrase or full organizational name:\n")
 
-phrase_list = phrase.split()
-print("\nThe acronym for \"{}\" is {}\n".format(phrase, get_acronym(phrase_list)))
+if __name__ == "__main__":
+    phrase = input("\nPlease type in a phrase or full organizational name:\n")
+
+    phrase_list = phrase.split()
+    print("\nThe acronym for \"{}\" is {}\n".format(phrase, get_acronym(phrase_list)))
