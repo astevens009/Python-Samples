@@ -10,7 +10,7 @@
 user_input = input("Please type in a string with 3 or more characters: ")
 
 if len(user_input) < 3:
-    print("Not enough charcaters. Please enter a string of 3 or more characters.")
+    print("Not enough characters. Please enter a string of 3 or more characters.")
 else:
     index = 2
     while index <= (len(user_input) - 1):
