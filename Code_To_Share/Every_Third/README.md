@@ -1,25 +1,33 @@
 # PYTHON SANDBOX DEMO
 ## Every Third
-Prompt the user for a string and print out every third character for the string. If the string is less than 3 characters print an appropriate message.
+Prompts for a string then prints every 3rd character. If the string has less than 3 characters it reports this
 
-<strong>Sample Input:</strong>
-<br/>
-caterpillar
+## How To Run
 
-<strong>Sample Output:</strong>
-<br/>
-t
-<br/>
-p
-<br/>
-l
-<br/>
-r
+```
+terminal> python3 every_third.py
+```
 
-<strong>Sample Input:</strong>
-<br/>
-no
+## Example Input-Output
 
-<strong>Sample Output:</strong>
-<br/>
-Not enough characters. Please enter a string of 3 or more characters.
+```
+Please enter a string with 3 or more characters: caterpillar
+Result: ['t', 'p', 'l']
+```
+
+```
+Please enter a string with 3 or more characters: The Lean Startup
+Result: ['e', 'e', ' ', 'a', 'u']
+```
+
+```
+Please enter a string with 3 or more characters: no
+'no' has less than 3 characters. 
+```
+
+```
+Please enter a string with 3 or more characters: .exit
+
+ Good-bye! 
+
+```

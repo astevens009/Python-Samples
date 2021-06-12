@@ -5,14 +5,26 @@
 #                len is < 3 print a message
 #==========================================================================
 
-# TODO: Have the program continue until the user quits
+# Print intro message
+print("""
 
-user_input = input("Please type in a string with 3 or more characters: ")
+Every Third: Prompts for a string then prints every 3rd character. If the string has less than 3 characters it reports this
 
-if len(user_input) < 3:
-    print("Not enough characters. Please enter a string of 3 or more characters.")
-else:
-    index = 2
-    while index <= (len(user_input) - 1):
-        print(user_input[index])
-        index += 3
+  To exit just type '.exit' 
+
+""")
+
+while True:
+
+    s = input("Please enter a string with 3 or more characters: ")
+
+    if s == ".exit":
+        print("\n Good-bye! \n")
+        break
+
+    if len(s) < 3:
+        print("'{}' has less than 3 characters. \n".format(s))
+        continue 
+
+    lst = list(s)
+    print('Result: {}\n'.format(lst[2::3]))
