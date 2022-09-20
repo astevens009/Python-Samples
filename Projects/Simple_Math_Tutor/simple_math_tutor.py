@@ -117,12 +117,7 @@ def generate_problem(operation, operands):
                         tries += 1
         
       
-
-def generate_operand():
-    return random.randint(1, 100)
-
-
-
+    
 @dispatch(str)
 def generate_problem(operation):
     # print("\nTEST:\nOperation: {}\n".format(operation))
@@ -192,6 +187,11 @@ def generate_problem(operation):
                     else:
                         print("\nNot quite. Try again...\n")
                         tries += 1
+
+                        
+                        
+def generate_operand():
+    return random.randint(1, 100)
 
 
 def selection_tester(selection):
